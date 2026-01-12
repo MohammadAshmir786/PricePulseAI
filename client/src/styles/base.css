@@ -1,0 +1,106 @@
+/* Base element styles */
+* {
+  box-sizing: border-box;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+body {
+  margin: 0;
+  background: var(--page-bg);
+  color: var(--text);
+  transition: background 200ms ease, color 200ms ease;
+  overflow-x: hidden;
+}
+
+/* Hide scrollbar */
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+/* Links */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: -0.4px;
+}
+
+/* Form elements */
+input,
+textarea,
+select {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(17, 24, 49, 0.8);
+  border-radius: 12px;
+  color: var(--text);
+  font: inherit;
+  transition: border 150ms ease, box-shadow 150ms ease, background 150ms ease;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+select {
+  appearance: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(255, 123, 95, 0.28);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+/* Light theme form elements */
+:root[data-theme="light"] input,
+:root[data-theme="light"] textarea,
+:root[data-theme="light"] select {
+  background: #ffffff;
+  border: 1px solid rgba(13, 18, 36, 0.08);
+  color: var(--text);
+}
+
+:root[data-theme="light"] input::placeholder,
+:root[data-theme="light"] textarea::placeholder {
+  color: rgba(13, 18, 36, 0.5);
+}
+
+:root[data-theme="light"] input:focus,
+:root[data-theme="light"] textarea:focus,
+:root[data-theme="light"] select:focus {
+  box-shadow: 0 0 0 2px rgba(45, 127, 249, 0.16);
+  border-color: var(--accent-2);
+}
+
+/* Buttons */
+button {
+  border: none;
+  border-radius: calc(var(--radius) - 4px);
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+/* Main content area */
+main {
+  padding: 0;
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+}

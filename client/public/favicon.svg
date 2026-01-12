@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <title>PricePulse AI</title>
+  <defs>
+    <linearGradient id="pulse" x1="10" y1="52" x2="54" y2="12" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff7b5f"/>
+      <stop offset="1" stop-color="#2d7ff9"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="12" y1="50" x2="52" y2="14" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0b1020" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#111831" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="56" height="56" rx="14" fill="#0b1020"/>
+  <rect x="6" y="6" width="52" height="52" rx="12" fill="url(#glow)"/>
+  <path d="M20 40h6.5l5-11 6 16 4-9.5H44" stroke="url(#pulse)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M24 22c0-4.418 3.582-8 8-8h6c4.418 0 8 3.582 8 8s-3.582 8-8 8h-6v10h-8V22Z" fill="url(#pulse)" opacity="0.9"/>
+</svg>

@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Block internal API and private app routes
+Disallow: /api/
+Disallow: /admin
+Disallow: /profile
+Disallow: /cart
+Disallow: /checkout
+Disallow: /order
+Disallow: /wishlist
+Disallow: /support
+Disallow: /oauth
+Disallow: /login
+Disallow: /register
+
+# Replace with your production domain sitemap
+# Sitemap: https://your-domain.com/sitemap.xml

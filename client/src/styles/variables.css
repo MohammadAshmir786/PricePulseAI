@@ -1,0 +1,54 @@
+/* CSS Custom Properties */
+:root {
+  /* Colors - Dark Theme */
+  --bg: #0b1020;
+  --surface: #111831;
+  --panel: rgba(255, 255, 255, 0.06);
+  --panel-strong: #111831;
+  --primary: rgb(11, 60, 138);
+  --accent: #ff7b5f;
+  --accent-2: #2d7ff9;
+  --text: #f7f9ff;
+  --muted: #9fb0d1;
+  --danger: #ff5370;
+  --page-bg: #0b1020;
+
+  /* Gradients */
+  --gradient-hero-dark: linear-gradient(135deg, #1a1f3a 0%, #0b0f1e 100%);
+  --gradient-hero-light: linear-gradient(135deg, #e3e8f5 0%, #f0f2f8 100%);
+  --gradient-text-dark: linear-gradient(135deg, #ffffff 0%, #a8b4d9 100%);
+  --gradient-text-light: linear-gradient(135deg, #0d1224 0%, #2d3a5c 100%);
+  --gradient-accent: linear-gradient(
+    135deg,
+    var(--accent) 0%,
+    var(--accent-2) 100%
+  );
+  --gradient-cta: linear-gradient(
+    135deg,
+    #10b981 0%,
+    #3b82f6 50%,
+    #8b5cf6 100%
+  );
+
+  /* Spacing */
+  --radius: 14px;
+
+  /* Typography */
+  font-family: "Space Grotesk", "Segoe UI", system-ui, -apple-system, sans-serif;
+  background: var(--page-bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+/* Light Theme */
+:root[data-theme="light"] {
+  --bg: #f6f7fb;
+  --surface: #ffffff;
+  --panel: rgba(255, 255, 255, 0.9);
+  --panel-strong: #ffffff;
+  --text: #0d1224;
+  --muted: #4a5670;
+  --danger: #d7263d;
+  --page-bg: #f6f7fb;
+  background: var(--page-bg);
+}

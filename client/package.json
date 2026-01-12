@@ -1,0 +1,40 @@
+{
+  "name": "pricepulseai-client",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.122.0",
+    "@react-three/fiber": "^8.18.0",
+    "@reduxjs/toolkit": "^1.9.7",
+    "@tailwindcss/vite": "^4.1.18",
+    "axios": "^1.3.5",
+    "chart.js": "^4.5.1",
+    "express-rate-limit": "^8.2.1",
+    "framer-motion": "^11.0.0",
+    "lucide-react": "^0.562.0",
+    "motion": "^12.23.26",
+    "nodemailer": "^7.0.11",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.3.1",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.1.3",
+    "react-router-dom": "^7.11.0",
+    "three": "^0.182.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.0",
+    "tailwindcss": "^4.1.18",
+    "vite": "^5.0.8"
+  }
+}

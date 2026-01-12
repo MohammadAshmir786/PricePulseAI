@@ -405,7 +405,11 @@ export default function LoginPage() {
                 type="button"
                 onClick={() => {
                   const next = encodeURIComponent(from);
-                  window.location.href = `/api/auth/github?next=${next}`;
+                  const apiBase = import.meta.env.VITE_API_URL || "/api";
+                  const baseUrl = apiBase.startsWith("http")
+                    ? `${apiBase}/auth/github`
+                    : `/api/auth/github`;
+                  window.location.href = `${baseUrl}?next=${next}`;
                 }}
                 className="py-3 px-4 rounded-xl font-semibold transition-all hover:scale-105 border flex items-center justify-center gap-2"
                 style={{
@@ -433,7 +437,11 @@ export default function LoginPage() {
                 type="button"
                 onClick={() => {
                   const next = encodeURIComponent(from);
-                  window.location.href = `/api/auth/google?next=${next}`;
+                  const apiBase = import.meta.env.VITE_API_URL || "/api";
+                  const baseUrl = apiBase.startsWith("http")
+                    ? `${apiBase}/auth/google`
+                    : `/api/auth/google`;
+                  window.location.href = `${baseUrl}?next=${next}`;
                 }}
                 className="py-3 px-4 rounded-xl font-semibold transition-all hover:scale-105 border flex items-center justify-center gap-2"
                 style={{
